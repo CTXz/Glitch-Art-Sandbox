@@ -94,10 +94,10 @@ def tunnel(im, box, by, offset=1, bias_x = 0, bias_y = 0):
 
     im.paste(crop, (box[0], box[1]))
 
-def pixelatedStretch(im, count, max_rect, min_rect=(20, 20, 20, 20), honly=False, vonly=False):
+def pixelatedStretch(im, count, max_rect, min_rect=(20, 20), honly=False, vonly=False):
     for i in range(0, count):
-        w = random.randint(min_rect[0], min_rect[0] + min_rect[2])
-        h = random.randint(min_rect[1], min_rect[1] + min_rect[3])
+        w = random.randint(min_rect[0], max_rect[0])
+        h = random.randint(min_rect[1], max_rect[1])
 
         x = random.randint(0, im.size[0] - w)
         y = random.randint(0, im.size[1] - h)
