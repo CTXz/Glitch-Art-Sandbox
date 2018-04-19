@@ -5,11 +5,15 @@ manipulating data.
 
 ## Project Layout
 
-|File     |Description                                                                                      |
+### Files
+
+|Name     |Description                                                                                      |
 |---------|-------------------------------------------------------------------------------------------------|
 |Glitch.py|A minimal API composed to create glitches using [Pillow](https://pillow.readthedocs.io/en/5.1.x/)|
 
-|Directory|Description                                      |
+### Directories
+
+|Name     |Description                                      |
 |---------|-------------------------------------------------|
 |Fonts    |Fonts required by scripts                        |
 |Examples |Example scripts that generate glitch-alike images|
