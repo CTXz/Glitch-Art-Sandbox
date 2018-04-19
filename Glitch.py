@@ -1,4 +1,4 @@
-# Copyright (c) 2017 Patrick Pedersen <ctx.xda@gmail.com>
+# Copyright (c) 2018 Patrick Pedersen <ctx.xda@gmail.com>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
