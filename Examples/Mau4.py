@@ -9,18 +9,15 @@ im = Image.open("./Original/Mau5.jpg")
 Glitch.horizontalStretch(im, (422, 73, 422 + 160, 73 + 30), 10)
 Glitch.horizontalStretch(im, (485, 119, 485 + 39, 119 + 39))
 
-tile = im.crop((116, 258, 116 + 763, 258 + 351))
-Glitch.tile(im, tile, (116, 258), 270, 100, 1)
+top = 258
+copy = 100
 
-tile = im.crop((116, 408, 116 + 763, 408 + 351))
-Glitch.tile(im, tile, (116, 408), 270, 50, 1)
-
-tile = im.crop((116, 508, 116 + 763, 508 + 351))
-Glitch.tile(im, tile, (116, 508), 270, 25, 1)
-
-tile = im.crop((116, 583, 116 + 763, 583 + 351))
-Glitch.tile(im, tile, (116, 583), 270, 12, 1)
+for i in range (0, 3):
+    tile = im.crop((116, top, 116 + 763, 258 + 351))
+    Glitch.tile(im, tile, (116, top), 270, int(copy), 1)
+    
+    top += 150 - (i * 50)
+    copy /= 2
 
 Glitch.addPlayButton(im, 30)
-
 im.save("./Results/Mau4.jpg")
